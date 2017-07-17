@@ -1,6 +1,16 @@
-<div class="full-width">
-    <img src="{{response.app.url_root}}static/img/epi-trump-approval.png" alt="A cartoon drawing of President Trump standing on a chart of his rapidly falling approval rating">
-</div>
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Fiction | Coup! Epilogue",
+        "url": "http://interactive.nydailynews.com/fiction/coup/chapter/epilogue/",
+        "thumbnailUrl": "http://interactive.nydailynews.com/fiction/coup/static/img/coup-share.jpg",
+        "dateCreated": "2017-06-12T05:00:00Z",
+        "articleSection": "Interactive",
+        "creator": ["Gersh Kuntzman", "Bill Bramhall", "Interactive Longform"],
+        "keywords": ["interactive","interactive fiction", "Melania Trump", "Donald Trump", "Mike Pence", "politics", "satire"]
+    }
+</script>
 
 <p class="date">Sunday, October 22, 2017</p>
 <p>Mike Pence is the 46th President of the United States. </p>
@@ -10,6 +20,10 @@
 <p>Melania Trump lives in Trump Tower in New York. She uses four dating apps including Tinder, Bumble and Coffee Meets Bagel.</p>
 
 <p>Ivanka Byivanka — formerly Ivanka Trump — is the nation's leading maker and distributor of jewelry, apparel and high-fashion armor. She is also a motivational speaker and advocate for the right of children to divorce their parents.</p>
+
+<div class="full-width">
+    <img src="{{response.app.url_root}}static/img/epi-trump-approval.png" alt="A cartoon drawing of President Trump standing on a chart of his rapidly falling approval rating">
+</div>
 
 <p>Steve Bannon lives on a commune outside of Barstow, California. During his house arrest under Acting President Pence, Bannon read <q>Zen and the Art of Motorcycle Maintenance</q> — thinking it was actually about fixing motorcycles — and realized he had made some crucial mistakes in his life.</p>
 
@@ -28,3 +42,13 @@
 <p>Rick Perry remained Energy Secretary and not only did not fold the agency, but expanded its research mission. He directed the Human Genome Project to explore whether oxygen deprivation could enhance sexual pleasure.</p>
 
 <p>Elaine Chao is the vice president of the United States, thanks to a 94-6 confirmation vote in the Senate. After the vote, she drove directly to the vice presidential residence at the Naval Observatory and issued the following order to her top aide: <q>Get me a copy of the goddamned Constitution!</q></p>
+
+<a href="{{response.app.url_root}}chapter/acknowledgements/">
+<div class="up-next-box">
+    <div class="coming-soon">keep reading &#9654;</div>
+    <div class="up-next-chapter"></div> 
+    <div class="up-next-details">The author's acknowledgements</div>
+    {% include 'includes/satire.html' %}
+    <a href="{{response.app.url_root}}"><div class="start-over">&#9664; start over</div></a>
+</div>
+</a>

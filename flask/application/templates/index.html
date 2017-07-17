@@ -3,6 +3,20 @@
 {% endblock style %}
 {% block breadcrumbs %}{{ super() }}{% endblock breadcrumbs %}
 {% block content %}
+<script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "NewsArticle",
+            "headline": "Fiction | Coup! How America was saved from Donald Trump",
+            "url": "http://interactive.nydailynews.com{{response.metadata.url|safe}}",
+            "thumbnailUrl": "http://interactive.nydailynews.com/fiction/coup/static/img/coup-share.jpg",
+            "dateCreated": "2017-06-12T05:00:00Z",
+            "articleSection": "Interactive",
+            "creator": ["Gersh Kuntzman", "Bill Bramhall", "Interactive Longform"],
+            "keywords": ["interactive","interactive fiction", "Donald Trump", "Mike Pence", "politics", "satire"]
+        }
+</script>
+
 <div id="cover">
     <div id="wrapper">
     <div>
@@ -11,13 +25,15 @@
     <div id="text">
 			<div class="cover-highlight">daily news fiction presents<br>a work of political satire</div>
 			<p class="cover-text">COUP! Mike Pence and a skeet-shooting pothead, Rick Perry's dance leotard, a waterboard and Ivanka save America from Donald Trump</p>
-        <a href="{{response.app.url_root}}chapter/01/">
+        
+        <a href="{{response.app.url_root}}chapter/22/">
             <div class="most-recent-box">
     			<div class="most-recent">most recent &#9654;</div>
-    			<div class="most-recent-chapter">chapter 1</div>
-    			<div class="most-recent-details" style="color: white;">Biden blinks &amp; Pence has an idea</div>
+    			<div class="most-recent-chapter">chapter 22</div>
+    			<div class="most-recent-details" style="color: white;">The Times writes about the state of the union</div>
     		</div>
     	</a>
+        
 {% include 'includes/dropdown.html' %}
 			<div class="scroll-text">or scroll down to start<br> from the beginning</div>
 			<div><img src="{{response.app.url_root}}static/img/down-arrow.png" alt=""></div>

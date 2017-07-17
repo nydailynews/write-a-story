@@ -3,16 +3,16 @@
             "@context": "http://schema.org",
             "@type": "NewsArticle",
             "headline": "Fiction | Coup! Ch. 10: A Beltway powerhouse takes over",
-            "url": "http://interactive.nydailynews.com/fiction/coup/chapter/10",
+            "url": "http://interactive.nydailynews.com/fiction/coup/chapter/10/",
             "thumbnailUrl": "http://interactive.nydailynews.com/fiction/coup/static/img/coup-share.jpg",
-            "dateCreated": "2017-06-12T05:00:00Z",
+            "dateCreated": "2017-06-13T05:00:00Z",
             "articleSection": "Interactive",
             "creator": ["Gersh Kuntzman", "Bill Bramhall", "Interactive Longform"],
             "keywords": ["interactive","interactive fiction", "Donald Trump", "Mike Pence", "politics", "satire"]
         }
 </script>
-
 <h1>A Beltway powerhouse takes over</h1>
+{% include 'includes/social.html' %}
 
 <p class="date">Tuesday, June 20, 2017</p>
 
@@ -80,19 +80,13 @@
 
 <div style="text-align: center;margin-left: 30px;">{% include 'includes/kindle.html' %}</div>
 
-<!-- <a href="{{response.app.url_root}}chapter/11/">
+<a href="{{response.app.url_root}}chapter/11/">
 <div class="up-next-box">
-    <div class="coming-soon">keep reading &nbsp; &#9654;</div>
+    <div class="coming-soon">keep reading &#9654;</div>
     <div class="up-next-chapter">chapter 11</div> 
     <div class="up-next-details">FLOTUS discovers Tinder</div>
     {% include 'includes/satire.html' %}
-</div>
-</a> -->
-
-<div class="up-next-box">
-    <div class="coming-soon">stay tuned</div>
-    <div class="up-next-chapter">for part 3 of 5</div> 
-    <div class="up-next-details" style="color: #002E76;">D.C. drama heats up tomorrow in the next installment of COUP!</div>
-    {% include 'includes/satire.html' %}
     <a href="{{response.app.url_root}}"><div class="start-over">&#9664; start over</div></a>
+
 </div>
+</a>

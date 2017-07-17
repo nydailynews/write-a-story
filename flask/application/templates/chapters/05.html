@@ -3,7 +3,7 @@
             "@context": "http://schema.org",
             "@type": "NewsArticle",
             "headline": "Fiction | Coup! Ch. 5: The slap heard ’round the world",
-            "url": "http://interactive.nydailynews.com/fiction/coup/chapter/05",
+            "url": "http://interactive.nydailynews.com/fiction/coup/chapter/05/",
             "thumbnailUrl": "http://interactive.nydailynews.com/fiction/coup/static/img/coup-share.jpg",
             "dateCreated": "2017-06-12T05:00:00Z",
             "articleSection": "Interactive",
@@ -110,20 +110,12 @@
 
 <div style="text-align: center;margin-left: 30px;">{% include 'includes/kindle.html' %}</div>
 
-<div class="up-next-box">
-    <div class="coming-soon">stay tuned</div>
-    <div class="up-next-chapter">for part 2 of 5</div> 
-    <div class="up-next-details" style="color: #002E76;">More D.C. drama coming tomorrow in the next installment of COUP!</div>
-    {% include 'includes/satire.html' %}
-</div>
-
-<!-- <a href="{{response.app.url_root}}chapter/06/">
-<div class="up-next-box">
-    <div class="coming-soon">keep reading &#9654;</div>
-    <div class="up-next-chapter">chapter 6</div> 
-    <div class="up-next-details"><a href="{{response.app.url_root}}chapter/06/">Trump doubles down on arming the Muslim world</a></div>
-    {% include 'includes/satire.html' %}
-    <a href="{{response.app.url_root}}"><div class="start-over">&#9664; start over</div></a>
-</div>
+<a href="{{response.app.url_root}}chapter/06/">
+    <div class="up-next-box">
+        <div class="coming-soon">keep reading &#9654;</div>
+        <div class="up-next-chapter">chapter 6</div> 
+        <div class="up-next-details"><a href="{{response.app.url_root}}chapter/06/">Trump doubles down on arming the Muslim world</a></div>
+        {% include 'includes/satire.html' %}
+        <a href="{{response.app.url_root}}"><div class="start-over">&#9664; start over</div></a>
+    </div>
 </a>
- -->

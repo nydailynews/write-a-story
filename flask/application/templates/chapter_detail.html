@@ -4,6 +4,7 @@
 {% block chapter %}{% if response.chapter|string not in 'acknowledgements' 'epilogue' %} {{response.chapter}}{% endif %}{% endblock chapter %}
 {% block content %}
 
+<a href="{{response.app.url_root}}"><p class="satire">start from the beginning</p></a>
 <div class="chapter-marker">
     <div class="chapter-number">
         {% if response.chapter|string not in 'acknowledgements' 'epilogue' %}chapter{% endif %} {{response.chapter}}

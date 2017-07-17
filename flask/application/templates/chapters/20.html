@@ -1,4 +1,20 @@
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Fiction | Coup! Ch. 20: A sweaty man on the move",
+        "url": "http://interactive.nydailynews.com/fiction/coup/chapter/20/",
+        "thumbnailUrl": "http://interactive.nydailynews.com/fiction/coup/static/img/coup-share.jpg",
+        "dateCreated": "2017-06-15T05:00:00Z",
+        "articleSection": "Interactive",
+        "creator": ["Gersh Kuntzman", "Bill Bramhall", "Interactive Longform"],
+        "keywords": ["interactive","interactive fiction", "Melania Trump", "Donald Trump", "Mike Pence", "politics", "satire"]
+    }
+</script>
+
 <h1>A sweaty man on the move</h1>
+{% include 'includes/social.html' %}
+
 <div class="full-width">
     <img src="{{response.app.url_root}}static/img/20-trump-sweat.png" alt="A cartoon drawing of Donald Trump walking to the Capitol and sweating while being followed by the media">
 </div>
@@ -14,7 +30,7 @@
 
 <p>And the people were riveted.</p>
 
-<blockquote><q>It is sort of like the white Bronco chase mixed with a moon landing mixed with 9/11 topped off with Bill Clinton saying ‘I did not have sex with that woman,’</blockquote>
+<blockquote><q>It is sort of like the white Bronco chase mixed with a moon landing mixed with 9/11 topped off with Bill Clinton saying ‘I did not have sex with that woman...’</blockquote>
 
 <p><q>I’m being told, Anderson, that the footage you are broadcasting right now is the most-watched live broadcast in the history of television,</q> Jake Tapper told Cooper on-air.</p>
 
@@ -98,5 +114,6 @@
     <div class="up-next-chapter">chapter 21</div> 
     <div class="up-next-details">The world puts Pence on notice</div>
     {% include 'includes/satire.html' %}
+    <a href="{{response.app.url_root}}"><div class="start-over">&#9664; start over</div></a>
 </div>
 </a>
