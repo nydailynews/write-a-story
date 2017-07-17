@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block style %}{% endblock style %}
+{% block breadcrumbs %}{{ super() }}{% endblock breadcrumbs %}
+{% block content %}
+
+<h1>Table of Contents</h1>
+<div class="chapter-text">
+<ul>
+	<li><a href="/fiction/coup/">Prologue</a></li>
+{% for item in response.app.chapters|sort %}
+    {% if 'Ch' in response.metadata_all[item].title %}
+    <li><a href="{{response.metadata_all[item].url}}">{{response.metadata_all[item].title.replace('Fiction | Coup! Ch.', 'Chapter')}}</a></li>
+    {% endif %}
+{% endfor %}
+{% include 'includes/kindle.html' %}
+</ul>
+</div>
+
+<div class="full-width">
+    <img src="{{response.app.url_root}}static/img/toc-perry-kisliak.png" alt="A cartoon drawing of Rick Perry on his mobile phone being watched by Kisliak through a window">
+</div>
+
+
+{% endblock content %}

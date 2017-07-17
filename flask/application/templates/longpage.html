@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block style %}.up-next-box { display: none; }{% endblock style %}
+{% block breadcrumbs %}{{ super() }}{% endblock breadcrumbs %}
+{% block content %}
+
+{% for chapter, markup in response.markup %}
+{% if loop.index0 != 0 %}
+    {%- set promo = [2,3,4]|random -%}
+    {% include 'includes/ad0' + promo|string + '.html' %}
+{% endif %}
+<div class="chapter-marker">
+    <div class="chapter-number" id="chapter-{{chapter}}">{% if chapter not in 'epilogue' 'acknowledgements' %}chapter {% endif %}{{chapter}}</div>
+</div>
+<div class="chapter-text">
+{{markup|safe}}
+</div>
+{% endfor %}
+
+{% endblock content %}

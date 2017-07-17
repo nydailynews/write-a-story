@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block style %}{% endblock style %}
+{% block breadcrumbs %}{{ super() }}{% endblock breadcrumbs %}
+{% block chapter %}{% if response.chapter|string not in 'acknowledgements' 'epilogue' %} {{response.chapter}}{% endif %}{% endblock chapter %}
+{% block content %}
+
+<div class="chapter-marker">
+    <div class="chapter-number">
+        {% if response.chapter|string not in 'acknowledgements' 'epilogue' %}chapter{% endif %} {{response.chapter}}
+    </div>
+</div>
+<div class="chapter-text">
+{{response.markup|safe}}
+</div>
+
+
+{% endblock content %}

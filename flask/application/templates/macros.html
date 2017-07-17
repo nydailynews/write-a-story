@@ -1,0 +1,7 @@
+{# GLOBAL MACROS GO HERE #}
+{%- macro add_image(filename,caption) -%}
+{{caller()}}<div class="full-width">
+    <img src="{{response.app.url_root}}static/img/{{filename}}" alt="{{caption}}">
+</div>
+{%- endmacro -%}
+{% call add_image('04-devos.png',"A cartoon drawing of President Trump and Education Secretary Betsy DeVos") %}{% endcall %}

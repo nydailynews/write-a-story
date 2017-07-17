@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block style %}
+{% endblock style %}
+{% block breadcrumbs %}{{ super() }}{% endblock breadcrumbs %}
+{% block content %}
+<div id="cover">
+    <div id="wrapper">
+    <div>
+        <img src="{{response.app.url_root}}static/img/coup-cover.jpg" alt="A photo illustration of the current administration depicted in the painting called George Washington Crossing the Delaware">
+    </div>
+    <div id="text">
+			<div class="cover-highlight">daily news fiction presents<br>a work of political satire</div>
+			<p class="cover-text">COUP! Mike Pence and a skeet-shooting pothead, Rick Perry's dance leotard, a waterboard and Ivanka save America from Donald Trump</p>
+        <a href="{{response.app.url_root}}chapter/01/">
+            <div class="most-recent-box">
+    			<div class="most-recent">most recent &#9654;</div>
+    			<div class="most-recent-chapter">chapter 1</div>
+    			<div class="most-recent-details" style="color: white;">Biden blinks &amp; Pence has an idea</div>
+    		</div>
+    	</a>
+{% include 'includes/dropdown.html' %}
+			<div class="scroll-text">or scroll down to start<br> from the beginning</div>
+			<div><img src="{{response.app.url_root}}static/img/down-arrow.png" alt=""></div>
+        {% include 'includes/kindle.html' %}
+
+    </div>
+    </div>
+</div>
+
+
+<p class="satire">This is a work of political satire. It should not be read as stating any actual facts about any person.</p>
+
+<div class="chapter-marker">
+    <div class="chapter-number">prologue</div>
+</div>
+{% include 'includes/social.html' %}
+
+<div class="chapter-text">
+{{response.prologue|safe}}
+</div>
+
+{% endblock content %}

@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>{{response.metadata.title|safe}}</title>
+    <link rel="icon" type="image/png" href="http://interactive.nydailynews.com/favicons.png">
+    <!-- DEFAULT -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="apple-touch-icon" href="">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <!-- TITLES -->
+    <meta property="og:title" content="{{response.metadata.title|safe|escapedouble}}" />
+    <meta name="twitter:title" content="{{response.metadata.title|safe|escapedouble}}" />
+
+    <!-- DESCRIPTION -->
+    <meta name="description" content="{{response.metadata.description|safe|escapedouble}}" />
+    <meta property="og:description" content="{{response.metadata.description|safe|escapedouble}}" />
+    <meta name="twitter:description" content="{{response.metadata.description|safe|escapedouble}}" />
+
+    <!-- KEYWORD -->
+    <meta name="keywords" content="{{response.metadata.keywords|safe|escapedouble}}" />
+    <meta name="news_keywords" content="{{response.metadata.keywords|safe|escapedouble}}" />
+
+    <!-- LINK -->
+    <link rel="canonical" href="http://interactive.nydailynews.com{{response.metadata.url|safe}}">
+    <meta property="og:url" content="http://interactive.nydailynews.com{{response.metadata.url|safe}}" />
+    <meta name="twitter:url" content="http://interactive.nydailynews.com{{response.metadata.url|safe}}" />
+
+    <!-- THUMBNAIL IMAGE-->
+    <meta property="og:image" content="{{response.app.url_root}}static/img/{{response.metadata.shareimg|safe}}" />
+    <meta name="twitter:image" content="{{response.app.url_root}}static/img/{{response.metadata.shareimg|safe}}" />
+    <meta name="twitter:image:alt" content="{{response.metadata.shareimgdesc|safe|escapedouble}}" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="512" />
+
+    <!-- PARSELY -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "NewsArticle",
+            "headline": "Fiction | Coup! How America was saved from Donald Trump",
+            "url": "http://interactive.nydailynews.com{{response.metadata.url|safe}}",
+            "thumbnailUrl": "http://interactive.nydailynews.com/fiction/coup/static/img/coup-share.jpg",
+            "dateCreated": "2017-06-12T05:00:00Z",
+            "articleSection": "Interactive",
+            "creator": ["Gersh Kuntzman", "Bill Bramhall", "Interactive Longform"],
+            "keywords": ["interactive","interactive fiction", "Donald Trump", "Mike Pence", "politics", "satire"]
+        }
+    </script>
+
+    <!-- NO NEED TO FILL -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:domain" content="http://interactive.nydailynews.com"/>
+    <meta name="twitter:site" content="@nydailynews">
+    <meta name="decorator" content="responsive" />
+    <meta name="nydn_section" content="NY Daily News" />
+    <meta name="robots" content="NOARCHIVE" />
+    <meta name="msvalidate.01" content="02916AAC0DA8B068EFE01D721E03ED7E" />
+    <meta name="p:domain_verify" content="78efe4f5c9935744af497772f68a0ee7" />
+    <meta property="fb:app_id" content="107464888913" />
+    <meta property="fb:admins" content="1594068001" />
+    <meta property="fb:pages" content="268914272540" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="NY Daily News" />
+    <meta property="article:publisher" content="https://www.facebook.com/NYDailyNews/" />
+    <meta name="searchBinding" content="/search" />
+    <meta name="localeCountry" content="US"/>
+    <meta name="localeLanguage" content="en" />
+
+    <!-- ADOBE ANALYTICS -->
+    <script src="//assets.adobedtm.com/4fc527d6fda921c80e462d11a29deae2e4cf7514/satelliteLib-c91fdc6ac624c6cbcd50250f79786de339793801.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|PT+Serif:400,400i" rel="stylesheet">
+
+    <script data-main="http://assets.nydailynews.com/nydn/js/rh.js?r=20170405001" src="http://assets.nydailynews.com/nydn/js/require.js?r=2016LIST" defer></script>
+      
+    <script>
+        var nydn = nydn || {
+            "section": "NYDailyNews",
+            "subsection": "news",
+            "template": "article",
+            "revision": "201609014009",
+            "bidder": { contains: function() {} },
+            "targetPath": document.location.pathname
+        };
+        var nydnDO = [ { 
+            'title':"xxx{{response.metadata.title|safe|escapedouble}}xxx", 
+            'link':'http://interactive.nydailynews.com{{response.metadata.url}}', 
+            'p_type':'interactive', 
+            'section':'interactive' 
+        }];
+    </script>
+    
+    <!-- ADS-START -->
+    <script onload="nydn_ads('one');" src="http://interactive.nydailynews.com/includes/ads/ads.js"></script>
+    <!-- ADS-END -->
+
+    <link rel="stylesheet" type="text/css" href="{{response.app.url_root}}static/css/site.css?v6">
+    <link rel="stylesheet" type="text/css" href="{{response.app.url_root}}static/css/handheld.css?v6">
+    <style type="text/css">
+{% block style %}{% endblock style %}
+    </style>
+    
+    {% block head %}{% endblock head %}
+
+</head>
+<body id="nydailynews" data-section="nydailynews" data-subsection="NY Daily News">
+
+<!-- SITEHEADER-START -->
+<header id="nydn-header">
+  <div id="nydn-header-wrap">
+    <a href="http://www.nydailynews.com"><div id="nydn-logo"></div></a>
+    <div id="fiction-tag"><a href="{{response.app.url_root}}">Fiction <span>Coup!</span></a></div>
+    <div id="social">
+      <a href="https://www.facebook.com/NYDailyNews"><img src="{{response.app.url_root}}static/img/FB-sm.png" alt="facebook logo"></a>
+      &nbsp;&nbsp;
+      <a href="https://twitter.com/NYDailyNews"><img src="{{response.app.url_root}}static/img/TW-sm.png" alt="twitter logo"></a>
+
+    </div>
+  </div>
+</header>
+<!-- SITEHEADER-END -->
+
+    <main>
+        <article>
+            {% include 'includes/nav.html' %}
+
+            {#
+            <h1>{{response.metadata.title}}</h1>
+            #}
+
+            <div class="maincol small-12 large-9 columns">
+            {% block content %}{% endblock content %}
+            </div>
+        </article>
+    </main>
+
+    {% include 'includes/ad01.html' %}
+
+    {% include 'includes/ad05.html' %}
+
+<!-- FOOTER-START -->
+<footer id="nydn-footer">
+    <noscript><p id="timestamp" class="stamp">Page generated at {{''|timestamp}}</p></noscript>
+    <ul>
+        <li><a href="{{response.app.url_root}}about/table-of-contents/">Table of Contents</a></li>
+        <li><a href="{{response.app.url_root}}chapter/acknowledgements/">Acknowledgements</a></li>
+        <li><a href="{{response.app.url_root}}about/credits/">Credits</a></li>
+    </ul>
+    <p>&copy; Copyright 2017 <a href="http://nydailynews.com">NYDailyNews.com</a>. All&nbsp;rights&nbsp;reserved.</p>
+</footer>
+
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <span id="parsely-cfg" data-parsely-site="nydailynews.com"></span>
+</div>
+<script>
+    (function(s, p, d) {
+      var h=d.location.protocol, i=p+"-"+s,
+          e=d.getElementById(i), r=d.getElementById(p+"-root"),
+          u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+          :"static."+p+".com";
+      if (e) return;
+      e = d.createElement(s); e.id = i; e.async = true;
+      e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+    })("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include: Standard -->
+<!-- FOOTER-END -->
+</body>
+</html>

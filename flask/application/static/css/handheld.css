@@ -1,0 +1,142 @@
+/* HANDHELD-SPECIFIC */
+@media only screen and ( min-width: 220px ) and ( max-width:727px ) {
+.chapter-marker {
+    min-width: 30%;
+    width: 30%;
+}
+.full-width img {
+    max-height: 250px;
+}
+}
+/* TABLET-SPECIFIC */
+@media only screen and ( min-width: 728px ) and (max-width:1023px) {
+}
+/* HANDHELD & TABLET */
+@media only screen and ( min-width: 220px ) and (max-width:1023px) {
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.chapter-text {
+    padding: 0 3%;
+}
+#nydn-header-wrap {
+    height: 20px;
+    padding: 6px 4px 0;
+    position: relative;
+}
+#nydn-logo {
+    float: left;
+    height: 17px;
+    margin: 0;
+    background-size: 150px;
+    width: 150px;
+    padding-right: 5px;
+}
+#fiction-tag {
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: -4px;
+}
+blockquote {
+    margin: 10px 20px;
+}
+.up-next-box {
+    max-width: 75%;
+}
+.up-next-box br { display: none; }
+#up-next-details { font-size: 23px; }
+
+select#menu {
+    font-size: 11px;
+}
+
+div.kindle {
+    width: 85%;
+    margin-top: 35px;
+    display: inline-block;
+}
+
+p.cover-text {
+    font-family: 'PT Serif', serif;
+    font-weight: normal;
+    color: white;
+    font-size: 19px;
+    line-height: 29px;
+    margin: 45px;
+}
+
+.most-recent-details {
+    font-family: 'PT Serif', serif;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 29px;
+    margin: 15px;
+}
+
+.kindle p {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    color: #d1c419;
+}
+p, li, dt, dd {
+    color: #030303;
+    font-family: 'PT Serif', serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 23px;
+    list-style: none;
+}
+
+p.dropcap:first-letter {
+    text-transform: uppercase;
+    float: left;
+    font-size: 50pt;
+    line-height: 50px;
+    margin-top: 5px;
+    padding-right: 7px;
+}
+
+.up-next-details {
+    font-family: 'PT Serif', serif;
+    color: #d1c419;
+    font-weight: normal;
+    font-size: 19px;
+    margin: 10px;
+}
+
+#social {
+    display: none !important;
+}
+
+
+/* Flexbox index cover styles */
+#cover {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+#wrapper {
+    display: block;
+}
+#wrapper > div {
+    width: 100%;
+    height: 100%;
+}
+#wrapper > div:first-child {
+    width: 100%;
+    height: 100%;
+}
+#wrapper > div > img {
+    width: 100%;
+}
+
+
+#cover #text {
+}
+}

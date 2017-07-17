@@ -1,0 +1,8 @@
+<div id="dropdown">
+    <div>SELECT A CHAPTER</div>
+    <select id="menu" onchange="document.location = 'http://interactive.nydailynews.com' + this.value">
+    {% for item in response.app.chapters %}
+      <option value="{{response.app.metadata[item].url}}">{{response.app.metadata[item].title|replace("Fiction | Coup! ", "")}}</option>
+    {%- endfor %}
+    </select>
+</div>

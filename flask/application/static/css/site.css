@@ -1,0 +1,563 @@
+body {
+    width: 100%;
+    margin: 0;
+    background-color: #fafafa;
+}
+
+hr.fancy { 
+  height: 30px; 
+  border-style: solid; 
+  border-color: #030303; 
+  border-width: 1px 0 0 0; 
+  border-radius: 20px; 
+} 
+
+hr.fancy:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #030303;
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+
+#nydn-header {
+    z-index:1003;
+    width:100%;
+    background-color: #333333;
+}
+header a span { color: white; }
+
+#nydn-header-wrap {
+    height: 52px;
+    padding: 10px 20px;
+    position: relative;
+}
+
+#nydn-logo {
+    float: left;
+    width: 200px;
+    height: 17px;
+    background: url(http://interactive.nydailynews.com/includes/media/nydn-logo-white.png) 0 0 no-repeat;
+    margin: 15px 15px 0px 30px;
+}
+
+#fiction-tag {
+    text-transform: uppercase;
+    color: #d1c419;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 23px;
+    letter-spacing: 5px; 
+    margin-top: 7px;
+}
+
+#social {
+    float: right;
+    margin-top: -28px;
+}
+
+@media screen and (max-width: 320px){#social{display:none !important;}}
+@media screen and (max-width: 480px){#social{display:none !important;}}
+@media screen and (max-width: 650px){#social{display:none !important;}}
+@media screen and (max-width: 980px){#social{display:none !important;}}
+
+div.cover-highlight {
+    text-align: center;
+    color: #d1c419;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 50px 0;
+    letter-spacing: 2px;
+}
+
+p.cover-text {
+    font-family: 'PT Serif', serif;
+    font-weight: normal;
+    color: white;
+    font-size: 27px;
+    line-height: 37px;
+    margin: 60px;
+    /*margin-top: 0;
+    margin-bottom: 15px;*/
+}
+/*div.cover-hed {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 45pt;
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+}*/
+
+.most-recent-box {
+    border: 1.5px solid #d1c419;
+    max-width: 60%;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.most-recent {
+    text-align: center;
+    max-width: 50%;
+    background-color: #d1c419;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #002E76;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: -12px auto;
+    padding: 5px 0;
+}
+
+.most-recent-chapter {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 20px;
+    color: white;
+}
+
+.most-recent-details {
+    font-family: 'PT Serif', serif;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 35px;
+    margin: 15px;
+}
+
+.most-recent-details a { color: white; }
+
+.scroll-text {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin: 20px;
+}
+
+div.kindle {
+    width: 60%;
+    margin-top: 60px;
+    display: inline-block;
+    /*margin-left: 35px;*/
+}
+
+.kindle p {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    color: #d1c419;
+}
+
+.kindle img {
+    float: left;
+    margin: 15px 20px 15px 0;
+}
+
+/* For kindle promos in-chapter */
+.chapter-text div.kindle {
+    margin-top: auto;
+}
+
+.chapter-text .kindle p {
+    color: #002E76;
+}
+
+
+.satire {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #002E76;
+    margin-top: 50px;
+}
+
+p, li, dt, dd {
+    color: #030303;
+    font-family: 'PT Serif', serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    list-style: none;
+}
+
+q {
+    quotes: ’\201C’ ‘\201D’;
+}
+
+.date {
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+    font-size: 22px;
+    text-align: center;
+}
+
+p.dropcap:first-letter {
+    text-transform: uppercase;
+    float: left;
+    font-size: 70pt;
+    line-height: 70px;
+    margin-top: 5px;
+    padding-right: 7px;
+}
+
+h1 {
+    font-family: 'PT Serif', serif;
+    font-weight: normal;
+    font-size: 33pt;
+    text-align: center;
+}
+
+.chapter-marker {
+    color: #d1c419;
+    margin: 50px auto 50px auto;
+    width: 25%;
+    text-align: center;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.chapter-number {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 36px;
+}
+
+.chapter-text {
+    max-width: 800px;
+    margin: auto;
+}
+
+@media only screen and (min-width:800px) {
+.full-width {
+    width: 99.5vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+}
+
+.full-width {
+    background-color: white;
+    border-top: solid 1px #e1e1e1; 
+    border-bottom: solid 1px #e1e1e1;
+}
+
+.full-width img {
+    max-height: 400px;
+    width: auto;
+    margin: auto;
+    display: block;
+}
+
+.coming-soon {
+    text-align: center;
+    max-width: 50%;
+    background-color: #002E76;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: -12px auto;
+    padding: 5px 0;
+}
+
+.start-over {
+    text-align: center;
+    max-width: 50%;
+    background-color: #002E76;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: -12px auto;
+    padding: 5px 0;
+}
+
+.up-next-box {
+    border: 1.5px solid #002E76;
+    max-width: 60%;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.up-next-chapter {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 20px;
+    color: #002E76;
+}
+
+.up-next-details {
+    font-family: 'PT Serif', serif;
+    color: #d1c419;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 35px;
+    margin: 10px;
+}
+
+.disclaimer {
+    font-size: 10px;
+    line-height: 15px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 30px;
+    margin-bottom: 30px;
+    color: #002E76;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #d1c419;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+blockquote {
+    font-family: 'PT Serif', serif;
+    color: #d1c419;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 33px;
+    margin: 25px 50px;
+    padding: 12px;
+    text-align: center;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+
+/*    KP CSS additions end   */
+
+@media only screen and (max-width: 768px) {
+    /* Adjust the layout */
+    body h1, body h2, body h3, body h4, body h5, body h6 { line-height: 1; }
+    body h1 { 
+        width: 100%!important; 
+        font-size: 2em!important;
+    }
+
+    /* Fix line-height on breadcrumbs */
+    #breadcrumbs {
+        line-height: 14px; 
+        margin-bottom: 10px;
+    }
+    /* Fix line-height on nav.app */
+    nav.app ul {
+        line-height: 0; 
+        margin-bottom: 5px;
+    }
+    /* More line-height fixes */
+    .stamp { margin-top: 10px; }
+
+    /* We want bullets on list items on mobile to make lists more readable. */
+    .row ul {
+        list-style-type: disc;
+        list-style-position: inside!important;
+    }
+}
+
+footer p, #content-footer p { text-align: center; }
+hr {
+    width: 80%;
+    margin: 8px auto;
+}
+.ad { margin-bottom: 10px; }
+div.ad > span {
+    font-size: 10px;
+    color: #999;
+    font-family: sans-serif;
+}
+.row { margin-left: 0; }
+nav.app ul li {
+    display: inline;
+}
+nav.app ul li:after {
+    content: " ᴥ ";
+}
+nav.app ul li:last-child:after {
+    content: "";
+}
+.stamp, nav.app {
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: #aaa;
+    text-align: center;
+    width: 100%;
+    line-height: 0.5;
+}
+.stamp span, nav.app ul span {
+    display: inline-block;
+    position: relative;  
+}
+.stamp span:before,
+.stamp span:after,
+nav.app ul:before,
+nav.app ul:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px dotted #ccc;
+    border-top: 1px dotted #ccc;
+    top: 0;
+    width: 600px;
+}
+.stamp span:before,
+nav.app ul:before {
+    right: 100%;
+    margin-right: 15px;
+}
+.stamp span:after,
+nav.app ul:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+#content-footer nav.app ul:before,
+#content-footer nav.app ul:after 
+{
+    border: 0px none;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a {
+    text-decoration: underline;
+}
+
+footer#nydn-footer {
+    padding-top: 15px;
+    border-top: 1px dotted #ccc;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+}
+
+/* Drop-down CSS */
+#dropdown {
+    margin: 5px 20px;
+}
+#dropdown > div {
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 13px;
+    letter-spacing: 1px;
+    width: 100%;
+    margin-bottom: 20px;
+    z-index: 500;
+    text-transform: uppercase;
+}
+select#menu {
+    text-transform: uppercase;
+    display: block;
+    background-color: #f0efef;
+    border: 0;
+    padding-left: 11px;
+    font-family: 'Open Sans';
+    font-size: 13px;
+    z-index: 500;
+    margin: auto;
+}
+
+footer {
+    margin: auto;
+}
+footer ul {
+    text-align: center;
+}
+footer li {
+    list-style-type: none;
+    display: inline;
+}
+footer li:after {
+    content: " ~";
+}
+footer li:last-child:after {
+    content: "";
+}
+
+dt {
+    display:inline;
+    float: left;
+}
+dt:after {
+    content: ": ";
+}
+dd {
+    text-indent: 5px;
+}
+
+/* Flexbox index cover styles */
+#cover {
+    width: 100%;
+    height: auto;
+    margin-top: -16px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #002E76;
+}
+#wrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+    overflow-y: hidden;
+}
+#wrapper > div {
+    flex: 1 0 0%;
+    width: 60%;
+    height: 100%;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+#wrapper {
+    min-height: 100vh;
+}
+#wrapper > div {
+    flex: 1 0 auto;
+}
+}
+#wrapper > div:first-child {
+    width: 40%;
+    height: 100%;
+    background-color: #fafafa;
+}
+#wrapper > div > img {
+    width: 100%;
+}
+#cover #text {
+/*    padding-top: 40px;
+*/    text-align: center;
+    background-color: #002E76;
+}

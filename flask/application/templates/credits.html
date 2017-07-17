@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block style %}{% endblock style %}
+{% block breadcrumbs %}{{ super() }}{% endblock breadcrumbs %}
+{% block content %}
+
+<h1>Credits</h1>
+
+<div class="chapter-text">
+<dl>
+   <dt>Book cover design</dt><dd>Isaac Lopez</dd>
+   <dt>Book cover photographs</dt><dd>Getty Images</dd>
+   <dt>Editor</dt><dd>Katherine Pushkar</dd>
+   <dt>Copy editor</dt><dd>Jon Blackwell</dd>
+   <dt>Lead designer</dt><dd>Jenna Bouchard</dd>
+   <dt>Designer</dt><dd>Jeffrey Mariano</dd>
+   <dt>Interactive developers</dt><dd>Joe Murphy and Kelli R. Parker</dd>
+   <dt>Director of Digital Editorial Operations</dt><dd>Kristen Lee</dd>
+</dl>
+</div>
+
+<div class="full-width">
+    <img src="{{response.app.url_root}}static/img/credits-trump-melania.png" alt="A cartoon drawing of President Trump looking at a picture of Melania on his mobile phone">
+</div>
+
+{% endblock content %}
