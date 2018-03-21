@@ -1,4 +1,4 @@
-# Coup
+# [Coup!](http://interactive.nydailynews.com/fiction/coup/)
 Fiction work.
 
 ## Usage
